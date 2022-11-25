@@ -1,0 +1,73 @@
+{
+  "_cts": {
+    "home": {
+      "header": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    },
+    "page": {},
+    "bloghomepage": {},
+    "blogpage": {},
+    "navigation": {}
+  },
+  "slices": {
+    "TextSlice": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "paragraph": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "eyebrow": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "NewSlice": {},
+    "ImageText": {
+      "default": {
+        "primary": {
+          "heading": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "paragraph": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "NavigationItem": {
+      "default": {
+        "primary": {
+          "Name": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

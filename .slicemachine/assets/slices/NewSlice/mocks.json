@@ -1,0 +1,26 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Constantly",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Mollit exercitation ipsum nulla est occaecat dolore anim pariatur proident excepteur ut eu.",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "new_slice"
+  }
+]
