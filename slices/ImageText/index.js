@@ -25,6 +25,9 @@ const ImageText = ({ slice }) => (
               <div className='heading'>
                 <PrismicRichText field={slice.primary.heading} />
              </div>
+             <div className='heading2'>
+             <span > { slice.primary.heading2 ? 'Black Friday Sale' : '' }</span>
+             </div>
 
               <div className = 'paragraph'>
                 <PrismicRichText field={slice.primary.paragraph} />
@@ -107,7 +110,16 @@ const ImageText = ({ slice }) => (
            .heading {
             margin-top: 0px;
             margin-bottom: 0px;
-            font-size: 3rem;
+            font-size: 2.5rem;
+            line-height: 0;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            font-family: 'Mabry pro', sans-serif;
+          }
+          .heading2 {
+            margin-top: 10px;
+            margin-bottom: 0px;
+            font-size: 2rem;
             line-height: 0;
             font-weight: 400;
             letter-spacing: -0.02em;
@@ -140,7 +152,7 @@ const ImageText = ({ slice }) => (
             background-repeat: no-repeat;
 
             mask-image: url(https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61942b84ec3d406199f07d78_vegalia.png);
-            mask-size: 50vmin;
+            mask-size: 40vmin;
             mask-repeat: no-repeat;
             mask-position: center;
         }

@@ -54,7 +54,8 @@
               "blocks": 1
             }
           }
-        }
+        },
+        "items": {}
       }
     },
     "NavigationItem": {
@@ -68,6 +69,7 @@
           }
         }
       }
-    }
+    },
+    "TestSlice": {}
   }
 }

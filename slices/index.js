@@ -3,12 +3,14 @@
 import ImageText from './ImageText';
 import NavigationItem from './NavigationItem';
 import NewSlice from './NewSlice';
+import TestSlice from './TestSlice';
 import TextSlice from './TextSlice';
 
 export {
 	ImageText,
 	NavigationItem,
 	NewSlice,
+	TestSlice,
 	TextSlice,
 };
 
@@ -16,5 +18,6 @@ export const components = {
 	image_text: ImageText,
 	navigation_item: NavigationItem,
 	new_slice: NewSlice,
+	test_slice: TestSlice,
 	text_slice: TextSlice,
 };

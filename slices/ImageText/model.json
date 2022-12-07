@@ -50,15 +50,13 @@
             "placeholder": ""
           }
         },
-        "backgroundcolor": {
-          "type": "Select",
+        "heading2": {
+          "type": "Boolean",
           "config": {
-            "label": "special",
-            "placeholder": "",
-            "options": [
-              "$20 if you sign up today",
-              " "
-            ]
+            "label": "heading2",
+            "placeholder_false": " ",
+            "placeholder_true": "Black Friday",
+            "default_value": false
           }
         }
       },
