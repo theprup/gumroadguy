@@ -15,7 +15,10 @@
           "type": "Image",
           "config": {
             "label": "imageleft",
-            "constraint": {},
+            "constraint": {
+              "width": 1000,
+              "height": 1000
+            },
             "thumbnails": [
               {
                 "name": "test",
@@ -40,7 +43,7 @@
             "label": "paragraph",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "multi": "paragraph,strong,em"
           }
         },
         "button": {
@@ -50,17 +53,27 @@
             "placeholder": ""
           }
         },
-        "heading2": {
-          "type": "Boolean",
+        "rt2": {
+          "type": "StructuredText",
           "config": {
-            "label": "heading2",
-            "placeholder_false": " ",
-            "placeholder_true": "Black Friday",
-            "default_value": false
+            "label": "rt2",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         }
       },
-      "items": {},
+      "items": {
+        "newrt": {
+          "type": "StructuredText",
+          "config": {
+            "label": "newrt",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     },
     {

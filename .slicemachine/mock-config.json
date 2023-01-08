@@ -9,9 +9,18 @@
       }
     },
     "page": {},
-    "bloghomepage": {},
+    "bloghomepage": {
+      "articles": {}
+    },
     "blogpage": {},
-    "navigation": {}
+    "navigation": {
+      "loginlabel": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   },
   "slices": {
     "TextSlice": {
@@ -61,7 +70,7 @@
     "NavigationItem": {
       "default": {
         "primary": {
-          "Name": {
+          "name": {
             "config": {
               "patternType": "PARAGRAPH",
               "blocks": 1

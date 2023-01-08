@@ -5,11 +5,14 @@ import * as prismicH from "@prismicio/helpers";
 
 import { createClient, linkResolver } from "../../prismicio";
 import { components } from "../../slices";
+import Image from 'next/image'
 
-function BlogPage({slices}) {
+function BlogPage({page}) {
     return (
-
-            <SliceZone slices={slices} components={components} />
+            <><PrismicRichText field={page.data.title} />
+            <PrismicRichText field={page.data.description} />
+            <PrismicRichText field={page.data.author} />
+            <SliceZone slices={page.data.slices} components={components} /></>
     );
 }
 
@@ -20,7 +23,7 @@ export async function getStaticProps({ params, previewData }) {
 
   return {
     props: {
-      slices: page.data.slices,
+      page: page,
     },
   };
 }
@@ -35,5 +38,9 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
-
+<style jsx>{` 
+  .p {
+    color: green
+  }
+  `}</style>
 export default BlogPage;

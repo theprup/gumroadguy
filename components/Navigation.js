@@ -1,19 +1,20 @@
-import { PrismicLink, PrismicText } from '@prismicio/react'
+import { PrismicLink, PrismicText, PrismicRichText } from "@prismicio/react";
 
 export function Navigation({ navigation }) {
   return (
-    <nav>
-      <ul>
+    <div className="top-nav">
+      <nav>
         {/* Renders top-level links. */}
         {navigation.data?.slices.map((slice) => {
+
           return (
-            <li key={slice.id}>
+            <div className="sub-nav" key={slice.id}>
               <PrismicLink field={slice.primary.link}>
                 <PrismicText field={slice.primary.name} />
               </PrismicLink>
 
               {/* Renders child links, if present. */}
-              {slice.items.length > 0 && (
+              {/* {slice.items.length > 0 && (
                 <ul>
                   {slice.items.map((item) => {
                     return (
@@ -25,11 +26,21 @@ export function Navigation({ navigation }) {
                     )
                   })}
                 </ul>
-              )}
-            </li>
-          )
+              )} */}
+            </div>
+          );
         })}
-      </ul>
-    </nav>
-  )
+      </nav>
+      <div className="login">
+        <PrismicLink field={navigation?.data.loginlink}>
+          <PrismicRichText field={navigation?.data.loginlabel} />
+        </PrismicLink>
+      </div>
+      <div className="signup">
+        <PrismicLink field={navigation?.data.signuplink}>
+          <PrismicRichText field={navigation?.data.signuplabel} />
+        </PrismicLink>
+      </div>
+    </div>
+  );
 }

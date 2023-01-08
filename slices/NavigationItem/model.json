@@ -11,7 +11,7 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "NavigationItem",
       "primary": {
-        "Name": {
+        "name": {
           "type": "StructuredText",
           "config": {
             "label": "Name",

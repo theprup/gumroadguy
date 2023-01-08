@@ -1,23 +1,117 @@
 {
-  "id": "mock-doc-id",
-  "url": null,
-  "type": "navigation",
-  "href": null,
-  "tags": [],
-  "first_publication_date": "1970-01-01T00:00:01+0000",
-  "last_publication_date": "1970-01-01T00:00:01+0000",
-  "slugs": [],
-  "linked_documents": [],
-  "lang": "en-us",
-  "alternate_languages": [],
-  "data": {
-    "name": [
+  "name": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
       {
         "type": "paragraph",
-        "text": "Elit consequat culpa id. Cillum sit ipsum ex esse minim enim velit nisi occaecat. Ex est quis deserunt amet Lorem nisi ad esse velit qui nulla magna.",
-        "spans": []
+        "content": {
+          "text": "Excepteur est tempor nisi ex sint. Dolore veniam voluptate occaecat."
+        }
       }
-    ],
-    "slices": []
+    ]
+  },
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "noted"
+  },
+  "loginlabel": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "In deserunt laboris non. Ad ad nisi minim laborum Lorem nulla in ex voluptate aliquip pariatur. Eu minim minim consequat cupidatat consectetur deserunt cillum Lorem et do in."
+        }
+      }
+    ]
+  },
+  "loginlink": {
+    "__TYPE__": "LinkContent",
+    "value": {
+      "__TYPE__": "ExternalLink",
+      "url": "http://twitter.com"
+    }
+  },
+  "signuplabel": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Nulla adipisicing ut aliqua ex reprehenderit aliquip et eu dolore in ipsum incididunt elit. Consectetur eu aliquip consequat id quis aliqua proident occaecat laboris. Lorem eu magna ex ad consequat excepteur aliqua eu ullamco voluptate reprehenderit irure."
+        }
+      }
+    ]
+  },
+  "signuplink": {
+    "__TYPE__": "LinkContent",
+    "value": {
+      "__TYPE__": "ExternalLink",
+      "url": "http://twitter.com"
+    }
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "navigation_item$8ae99620-e99f-4526-8b97-7f7271f7d50c",
+        "name": "navigation_item",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "name": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Consectetur laborum quis et exercitation laboris cillum aute irure reprehenderit deserunt exercitation est."
+                  }
+                }
+              ]
+            },
+            "link": {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://google.com"
+              }
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "name",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Aute consequat nostrud qui irure ullamco dolor laborum officia consequat sit."
+                        }
+                      }
+                    ]
+                  }
+                ],
+                [
+                  "link",
+                  {
+                    "__TYPE__": "LinkContent",
+                    "value": {
+                      "__TYPE__": "ExternalLink",
+                      "url": "http://twitter.com"
+                    }
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ]
   }
 }

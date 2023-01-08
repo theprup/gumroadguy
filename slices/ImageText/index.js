@@ -13,7 +13,7 @@ const ImageText = ({ slice }) => (
       <div className='bg-yellow-dark'>
         <div className='column-padding centered'>
         <div className='newimage'>
-          <Image src={slice.primary.imageright.url} alt={slice.primary.imageright.alt} width={500} height={500} />
+          <Image src={slice.primary.imageright.url} alt={slice.primary.imageright.alt} width={500} height={500}/>
           </div>
         </div>
       </div>
@@ -23,21 +23,34 @@ const ImageText = ({ slice }) => (
             <div className='content-grid'>
   
               <div className='heading'>
-                <PrismicRichText field={slice.primary.heading} />
-             </div>
-             <div className='heading2'>
-             <span > { slice.primary.heading2 ? 'Black Friday Sale' : '' }</span>
+                <PrismicRichText field={slice.primary.heading} components={{
+          heading1: ({ children }) => <h1 className="heading">{children}</h1>
+        }
+        } />
              </div>
 
               <div className = 'paragraph'>
-                <PrismicRichText field={slice.primary.paragraph} />
-                <span >{ slice.primary.backgroundcolor }</span>
+                <PrismicRichText field={slice.primary.paragraph} components={{
+          paragraph: ({ children }) => <p className="paragraph">{children}</p>
+        }
+        }/>
+                <PrismicRichText field={slice.primary.rt2} />
+                {
+                slice?.items?.map((item, i) =>
+    // eslint-disable-next-line react/jsx-key
+              <div key={i}>
+              <PrismicRichText  field={item.newrt} />
+              </div>
+              )
+              }
 
                 {slice.variation !== 'default' ? <span> {slice.primary.date} </span> :  null }
+                
               </div>
-            <div className="button">
-            <div className="gbutton">{slice.primary.button }</div>
+              <div className="newbutton">
+               <div className="gbutton">{slice.primary.button }</div>
             </div>
+           
           </div>
       </div>
     </div>
@@ -48,12 +61,12 @@ const ImageText = ({ slice }) => (
   
     <style jsx>{`
 
-        .wf-section {box-sizing: border-box;
+        .wf-section {
+          box-sizing: border-box;
           }
         .grid-halves {
            display: -ms-grid;
             display: grid;
-            width: 100%;
             grid-auto-columns: 1fr;
             grid-column-gap: 0px;
             grid-row-gap: 0px;
@@ -61,8 +74,6 @@ const ImageText = ({ slice }) => (
             grid-template-rows: auto;
             border-bottom: 2px solid #000;
             border-top: 2px solid #000;
-            border-right: 2px solid #000;
-            border-left: 2px solid #000;
             }
           .border-left {
               border-left: 2px solid #000;
@@ -108,13 +119,14 @@ const ImageText = ({ slice }) => (
             }
           
            .heading {
-            margin-top: 0px;
-            margin-bottom: 0px;
-            font-size: 2.5rem;
-            line-height: 0;
+            margin-top: 0em;
+            margin-bottom: 0em;
+            font-size: 4rem;
             font-weight: 400;
             letter-spacing: -0.02em;
             font-family: 'Mabry pro', sans-serif;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
           }
           .heading2 {
             margin-top: 10px;
@@ -127,8 +139,8 @@ const ImageText = ({ slice }) => (
           }
           .paragraph {
             display: block;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
+            margin-block-start: 0.5em;
+            margin-block-end: 0.5em;
             margin-inline-start: 0px;
             margin-inline-end: 0px;
             font-size: 1.5rem;
@@ -150,24 +162,17 @@ const ImageText = ({ slice }) => (
             
             background-position: center;
             background-repeat: no-repeat;
-
-            mask-image: url(https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61942b84ec3d406199f07d78_vegalia.png);
+            background-size: contain;
+           {/* mask-image: url(https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61942b84ec3d406199f07d78_vegalia.png); */}
             mask-size: 40vmin;
             mask-repeat: no-repeat;
             mask-position: center;
         }
 
-        .button {
-          position: relative;
-          z-index: 1;
-          padding: 1.1rem 2rem 1.2rem;
-          border-radius: 4px;
-          background-color: #000;
-          color: #fff;
-          font-size: 1.5rem;
-          text-align: center;
-          text-decoration: none;
-        }
+        
+
+
+    
         .gbutton {
           color: white;
           font-family: 'Mabry pro', sans-serif;

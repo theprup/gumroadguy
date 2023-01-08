@@ -1,1 +1,63 @@
-[{"__TYPE__":"SharedSliceContent","variation":"default","primary":{"eyebrow":{"__TYPE__":"StructuredTextContent","value":[{"type":"paragraph","content":{"text":"Veniam dolor enim aliquip cupidatat aliqua consectetur voluptate eiusmod ipsum sunt. Dolor aliquip pariatur eiusmod nulla et veniam minim Lorem officia velit ex. Est voluptate occaecat id est proident adipisicing exercitation pariatur ea minim Lorem."}}]},"title":{"__TYPE__":"StructuredTextContent","value":[{"type":"heading1","content":{"text":"Unusual"}}]},"paragraph":{"__TYPE__":"StructuredTextContent","value":[{"type":"paragraph","content":{"text":"Minim est nulla et ipsum culpa esse esse minim magna do occaecat nostrud nulla adipisicing. Culpa est sint enim esse Lorem. Ex labore irure ea culpa incididunt occaecat eu duis aliqua reprehenderit."}}]},"link":{"__TYPE__":"LinkContent","value":{"__TYPE__":"ExternalLink","url":"https://slicemachine.dev"}},"label":{"__TYPE__":"FieldContent","value":"doubt","type":"Text"}},"items":[{"__TYPE__":"GroupItemContent","value":[]}]}]
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "eyebrow": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "GumProops Blog",
+              "spans": []
+            },
+            "direction": "ltr"
+          }
+        ]
+      },
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading1",
+            "content": {
+              "text": "The latest news and resources",
+              "spans": []
+            },
+            "direction": "ltr"
+          }
+        ]
+      },
+      "paragraph": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Lorem velit id dolor labore sunt aliquip est reprehenderit. Do ex nostrud cillum tempor mollit labore in reprehenderit incididunt anim laborum. Reprehenderit anim aliquip elit pariatur do officia reprehenderit cillum laboris deserunt labore consectetur."
+            }
+          }
+        ]
+      },
+      "link": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "http://twitter.com"
+        }
+      },
+      "label": {
+        "__TYPE__": "FieldContent",
+        "value": "finally",
+        "type": "Text"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

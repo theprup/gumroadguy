@@ -27,8 +27,27 @@
             },
             "image_text": {
               "type": "SharedSlice"
+            },
+            "test_slice": {
+              "type": "SharedSlice"
             }
           }
+        }
+      }
+    },
+    "SEO": {
+      "seotitle": {
+        "type": "Text",
+        "config": {
+          "label": "seotitle",
+          "placeholder": ""
+        }
+      },
+      "seodescription": {
+        "type": "Text",
+        "config": {
+          "label": "seodescription",
+          "placeholder": ""
         }
       }
     }
