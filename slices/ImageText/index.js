@@ -38,9 +38,12 @@ const ImageText = ({ slice }) => (
                 {
                 slice?.items?.map((item, i) =>
     // eslint-disable-next-line react/jsx-key
-              <div key={i}>
-              <PrismicRichText  field={item.newrt} />
-              </div>
+              <>
+                    <>
+                      <div key={i}>
+                        <PrismicRichText field={item.newrt} />
+                      </div><div>
+                      </div></><div dangerouslySetInnerHTML={{ __html: slice.primary.test.html }} /></>
               )
               }
 
