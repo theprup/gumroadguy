@@ -34,6 +34,7 @@ const ImageText = ({ slice }) => (
           paragraph: ({ children }) => <p className="paragraph">{children}</p>
         }
         }/>
+        <span >{ asDate(slice.primary.test).toString() }</span>
                 <PrismicRichText field={slice.primary.rt2} />
                 {
                 slice?.items?.map((item, i) =>
@@ -42,12 +43,11 @@ const ImageText = ({ slice }) => (
                     <>
                       <div key={i}>
                         <PrismicRichText field={item.newrt} />
-                      </div><div>
-                      </div></><div dangerouslySetInnerHTML={{ __html: slice.primary.test.html }} /></>
+                      </div> </></>
               )
               }
 
-                {slice.variation !== 'default' ? <span> {slice.primary.date} </span> :  null }
+                {slice.variation !== 'default'  }
                 
               </div>
               <div className="newbutton">
