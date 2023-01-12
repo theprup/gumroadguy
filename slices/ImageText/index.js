@@ -34,7 +34,6 @@ const ImageText = ({ slice }) => (
           paragraph: ({ children }) => <p className="paragraph">{children}</p>
         }
         }/>
-        <span >{ asDate(slice.primary.test).toString() }</span>
                 <PrismicRichText field={slice.primary.rt2} />
                 {
                 slice?.items?.map((item, i) =>
